@@ -15,6 +15,18 @@
   ],
   "options": [
     {
+      "identifier": "endpoint",
+      "label": "API Endpoint",
+      "type": "string",
+      "description": "The API endpoint to use (e.g. https://api.openai.com/v1)",
+    },
+    {
+      "identifier": "modelname",
+      "label": "Model Name",
+      "type": "string",
+      "description": "The model name to use (e.g. gpt-4o-mini)",
+    },
+    {
       "identifier": "apikey",
       "label": "API Key",
       "type": "string",
