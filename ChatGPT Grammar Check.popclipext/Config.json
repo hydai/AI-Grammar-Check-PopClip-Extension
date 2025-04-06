@@ -16,7 +16,21 @@
   "options": [
     {
       "identifier": "endpoint",
-      "label": "API Endpoint",
+      "label": "Default API Endpoint",
+      "type": "string",
+      "description": "The API endpoint to use (e.g. https://api.openai.com/v1)",
+      "default value": "https://api.openai.com/v1"
+    },
+    {
+      "identifier": "endpoint_zh",
+      "label": "API Endpoint for chinese",
+      "type": "string",
+      "description": "The API endpoint to use (e.g. https://api.openai.com/v1)",
+      "default value": "https://api.openai.com/v1"
+    },
+    {
+      "identifier": "endpoint_ko",
+      "label": "API Endpoint for korean",
       "type": "string",
       "description": "The API endpoint to use (e.g. https://api.openai.com/v1)",
       "default value": "https://api.openai.com/v1"
