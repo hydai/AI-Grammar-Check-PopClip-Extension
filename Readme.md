@@ -34,9 +34,10 @@ Hydai, Hiraku
 
 ### Acknowledgements
 
-Original Extention:
+Based on:
 
 - [ChatGPT by pilotmoon](https://github.com/pilotmoon/PopClip-Extensions/tree/master/source/ChatGPT.popclipext)
+- [ChatGPT Grammar Check by hirakujira](https://github.com/hirakujira/ChatGPT-Grammar-Check-PopClip-Extension)
 
 Icons:
 
