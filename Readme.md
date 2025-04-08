@@ -1,39 +1,43 @@
-# ChatGPT
+# LLM Grammar Check
 
-Send the selected text to [ChatGPT](https://openai.com/blog/chatgpt) or OpenAI Compatible Endpoint for misused grammar checking.
+Send the selected text to an OpenAI compatible LLM service, such as [OpenAI](https://platform.openai.com/docs/overview) or [Gaia](https://docs.gaianet.ai/getting-started/quick-start), for grammar and spell checking. 
 
 ### Configuration
 
-#### API Key
-
-An API key of OpenAI account is required to use this extension. To get an API Key:
-
-1. Sign up for an OpenAI account here: <https://platform.openai.com/>
-2. Generate an API key here: <https://platform.openai.com/account/api-keys>
-3. Copy and paste the API Key (it starts with `sk-`) into the _API Key_ field in
-   the extension's settings.
-
 #### API Endpoint
 
-The default endpoint is `https://api.openai.com/v1`, feel free to change it into any endpoint which is compatible with OpenAI API.
+* **Running your own Gaia node:** use `http://localhost:8080/v1`
+* **Public Gaia node:** it could be something like `https://0x1234.gaia.domains/v1` -- the public address of your node
+  * Default LLM for all languages: [Create a Gaia node for this](https://github.com/GaiaNet-AI/node-configs/tree/main/gemma-2-9b-it)
+  * Finetuned LLM for Chinese: [Create a Gaia node for this](https://github.com/GaiaNet-AI/node-configs/tree/main/qwen2.5-7b-instruct)
+  * Finetuned LLM for Korean: [Create a Gaia node for this](https://github.com/GaiaNet-AI/node-configs/tree/main/exaone-3.5-7.8b-instruct)
+* **OpenAI:** defaults to `https://api.openai.com/v1`
+
+#### API Key
+
+* **Running your own Gaia node:** you can leave this empty.
+* **Public Gaia node:** https://docs.gaianet.ai/getting-started/authentication
+* **OpenAI API:** https://platform.openai.com/account/api-keys
 
 #### Model Name
 
-The default model is `gpt-4o-mini`, feel free to change it into any model you like.
+* **Gaia:** you can use `default`
+* **OpenAI:** default model is `gpt-4o-mini`
 
 ## About
 
 This is an extension for [PopClip](https://pilotmoon.com/popclip/).
 
-### Author
+### Authors
 
-Hiraku
+Hydai, Hiraku
 
 ### Acknowledgements
 
-Original Extention:
+Based on:
 
 - [ChatGPT by pilotmoon](https://github.com/pilotmoon/PopClip-Extensions/tree/master/source/ChatGPT.popclipext)
+- [ChatGPT Grammar Check by hirakujira](https://github.com/hirakujira/ChatGPT-Grammar-Check-PopClip-Extension)
 
 Icons:
 
@@ -42,17 +46,3 @@ Icons:
 ### Requirements
 
 Requires PopClip 2022.12 and an OpenAI Platform account.
-
-### Links
-
-- [GitHub Source](https://github.com/hirakujira/ChatGPT-Grammar-Check-PopClip-Extension)
-
-## Changelog
-
-### 2023-03-03.1
-
-- Better support for other languages.
-
-### 2023-03-03
-
-- Initial release.
